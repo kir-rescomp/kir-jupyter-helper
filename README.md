@@ -1,2 +1,2 @@
-# kir_jupyter_helper
+# KIR Jupyter Helper
 KIR Jupyter helpers
