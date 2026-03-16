@@ -1,0 +1,23 @@
+[project]
+name = "kir-jupyter-helpers"
+version = "0.1.0"
+authors = [
+    {name = "Dinindu Senanayake"},
+]
+description = "Jupyter kernel management tools for BMRC cluster users"
+requires-python = ">=3.9"
+dependencies = [
+    "ipykernel",
+    "defopt",
+    "jupyter_core",
+]
+
+[project.optional-dependencies]
+dev = ["black", "flake8", "pytest", "nbformat", "nbconvert"]
+
+[project.scripts]
+kir-add-kernel = "kir_jupyter_helpers.add_kernel:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
