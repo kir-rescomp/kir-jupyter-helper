@@ -71,7 +71,7 @@ def add_kernel(
     container: T.Optional[Path] = None,
     container_args: str = "",
     shared: bool = False,
-    account: T.Optional[str] = None,
+    group: T.Optional[str] = None,
 ):
     """Register a new jupyter kernel, with a wrapper script to load BMRC modules
 
