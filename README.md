@@ -16,7 +16,7 @@ the `ipykernel` that ships with the cluster's JupyterLab module. Your environmen
 ### How does it work ?
 
 <p align="center">
-    <img src="./img/kernel_wrapper_architecture.svg" alt="kernel-wrapper"  width="400"/>
+    <img src="./img/kernel_wrapper_architecture.svg" alt="kernel-wrapper"  width="600"/>
 </p>
 
 Normally, registering a Jupyter kernel requires installing `ipykernel` directly into each environment.
