@@ -28,3 +28,38 @@ as the kernel instead. When JupyterLab launches the kernel, the wrapper activate
 cluster's `JupyterLab` module. Your environment is never modified.
 
 An additional benefit is shared kernels: a single registration under your group's `shared` directory makes the kernel available to all group members without each person having to set anything up.
+
+```bash
+$ kir-add-kernel --help
+usage: kir-add-kernel [-h] [-p CONDA_PATH] [-n CONDA_NAME] [-v VENV] [-c CONTAINER] [--container-args CONTAINER_ARGS] [-s | --shared | --no-shared] [-g GROUP]
+                      kernel_name [module ...]
+
+Register a new jupyter kernel, with a wrapper script to load BMRC modules
+
+positional arguments:
+  kernel_name           Jupyter kernel name
+  module                BMRC module(s) to load before running the kernel
+
+options:
+  -h, --help            show this help message and exit
+  -p CONDA_PATH, --conda-path CONDA_PATH
+                        path to a Conda environment
+                        (default: None)
+  -n CONDA_NAME, --conda-name CONDA_NAME
+                        name of a Conda environment
+                        (default: None)
+  -v VENV, --venv VENV  path to a Python virtual environment
+                        (default: None)
+  -c CONTAINER, --container CONTAINER
+                        path to a Apptainer ( expect it to be installed at OS level )
+                        (default: None)
+  --container-args CONTAINER_ARGS
+                        additional parameters for 'apptainer exec' command
+                        (default: )
+  -s, --shared, --no-shared
+                        share the kernel with other members of your group
+                        (default: False)
+  -g GROUP, --group GROUP
+                        BMRC group for a shared kernel, instead of current job's
+                        (default: None)
+```
