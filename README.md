@@ -4,7 +4,7 @@
   <img src="./img/kir_jupyter_helper_logo.png" alt="logo" width="300"/>
 </p>
 
-kir-jupyter-helper is a set of command-line tool for assiting Jupyter functions (it supports JupyterLab on both OpenOnDemand or a session opened via `srun` with port-forwarding)
+`kir-jupyter-helper` is a set of command-line tool for assiting Jupyter functions (it supports JupyterLab on both OpenOnDemand or a session opened via `srun` with port-forwarding)
 
 ## `kir-add-kernel`
 
